@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.6)),
+    url(./img/passenger-counter-bg.jpg) no-repeat center center/cover;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 48px;
+  padding-bottom: 1.5rem;
+}
+h2 {
+  font-size: 36px;
+  padding-bottom: 1.5rem;
+}
+
+button {
+  padding: 12px;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  background: #17a2b8;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 10px 0px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.decrement-btn {
+  background: #dc3545;
+}
+
+/* 
+
+
+Responsive Design
+
+
+*/
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+    padding-bottom: 1.5rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 42px;
+    padding-bottom: 1.5rem;
+  }
+
+  button {
+    width: 60%;
+  }
+}
